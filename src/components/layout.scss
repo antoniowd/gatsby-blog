@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+$body-size: 15px;
+
+@import "../../node_modules/bulma/bulma.sass";
+
+.reddit-color {
+  color: #FF4500;
+}
+
+.twitter-color {
+  color: #08A0E9;
+}
+
+.linkedin-color {
+  color: #0E76A8;
+}
+
+.github-color {
+  color: #24292e;
+}
