@@ -12,6 +12,22 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sass`,
     {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: `gatsby-remark-prismjs`,
+          },
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 1002,
+            },
+          },
+        ]
+      }
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
@@ -19,14 +35,11 @@ module.exports = {
       },
     },
     {
-      resolve: 'gatsby-source-strapi',
+      resolve: `gatsby-source-filesystem`,
       options: {
-        apiURL: process.env.API_URL || 'http://localhost:1337',
-        contentTypes: [
-          'article', 'category',
-        ],
-        queryLimit: 1000,
-      }
+        name: `conent`,
+        path: `${__dirname}/src/content`,
+      },
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,

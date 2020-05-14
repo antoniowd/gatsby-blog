@@ -1,6 +1,8 @@
 @charset "UTF-8";
 
-$body-size: 15px;
+// $body-size: 16px;
+$strong-weight: 600;
+$weight-semibold: 500;
 
 @import "../../node_modules/bulma/bulma.sass";
 
@@ -18,4 +20,24 @@ $body-size: 15px;
 
 .github-color {
   color: #24292e;
+}
+
+a.blog-list {
+  padding: 0.6rem;
+}
+
+a.blog-list:hover {
+  background-color: hsl(0, 0%, 96%);
+}
+
+a.blog-list:hover .blog-title {
+  color: #3273dc;
+}
+
+a.blog-list:hover img {
+    border: 2px solid transparent;
+  }
+  
+  a.blog-list .media-left img {
+  border-radius: 290486px;
 }

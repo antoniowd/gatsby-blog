@@ -30,8 +30,8 @@ const Nav = () => {
         <div className={cn('navbar-menu', { 'is-active': active })}>
           <div className="navbar-start">
             <div className="navbar-item"></div>
-            <a href="/cursos" className="navbar-item">Cursos</a>
-            <a href="/blog" className="navbar-item">Blog</a>
+            {/* <a href="/cursos" className="navbar-item">Cursos</a>
+            <a href="/blog" className="navbar-item">Blog</a> */}
           </div>
 
           <div className="navbar-end">
