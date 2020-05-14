@@ -9,10 +9,13 @@ export default function Template({ data }) {
     <Layout>
       <section className="section">
         <div className="container">
-          <div className="columns">
+          <div className="columns is-multiline">
             <div className="column is-8 is-touch-12">
               <h1 className="title is-2 is-size-3-mobile">{frontmatter.title}</h1>
               <div className="content" dangerouslySetInnerHTML={{ __html: html }} />
+            </div>
+            <div className="column is-4 is-touch-12">
+              
             </div>
           </div>
         </div>

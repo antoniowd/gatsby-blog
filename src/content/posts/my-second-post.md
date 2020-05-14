@@ -12,7 +12,9 @@ Aunque PHP tiene ya una función llamada `array_unique` para eliminar duplicados
 ## Primero un poco de teoría
 
 Casi todas las operaciones que tienen que ver con un array requieren una iteración sobre este. Para esta iteración usare `array_reduce` que permite reducir un array en un único valor (incluso otro array). Cuando se trata de transformar un array en otro valor no creo que hay mejor función a usar que `array_reduce`.
+
 Teniendo el `array_reduce` como función para transformar el array en su versión final sin duplicados, ahora, necesitamos crear la parte en donde buscamos y comparamos si hay duplicidad. Para lograrlo tenemos la función `array_filter`, la cual hace una búsqueda y te devuelve un nuevo array aplicando un criterio de filtrado que definas.
+
 Con estas dos funciones propias del php y otra que veremos más adelante ya podremos crear nuestra propia función para eliminar duplicados de un array sin importar su tipo.
 
 ## Lo que a todos nos gusta. ¡La práctica!
