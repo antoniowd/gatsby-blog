@@ -55,7 +55,7 @@ const Newsletter = () => {
           {
             thanks && (<>
               <p className="title is-4 is-spaced has-text-success" style={{ marginTop: '1.2rem' }}>¡Gracias por tu suscripción!</p>
-              <div className="has-text-muted is-size-7">Te envie un correo de confirmacion</div>
+              <div className="has-text-muted is-size-7">Te envie un correo de saludo y confirmar que todo esta correcto.</div>
             </>
             )
           }

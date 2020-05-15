@@ -11,7 +11,7 @@ const Layout = ({ children, siteTitle, siteDescription, siteKeywords }) => {
   return (
     <>
       <SEO
-        title={siteTitle || 'Blod de desarrollo web'}
+        title={siteTitle || 'Blog de desarrollo web'}
         description={siteDescription}
         keywords={siteKeywords || []} />
       <Nav />
