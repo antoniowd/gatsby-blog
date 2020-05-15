@@ -26,7 +26,6 @@ const Newsletter = () => {
 
       addToMailchimp(email)
         .then(data => {
-          console.log(data)
           if (data.result === 'success') {
             setThanks(true)
           } else {
