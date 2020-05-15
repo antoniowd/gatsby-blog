@@ -2,7 +2,7 @@
 import React, { useState } from "react"
 import cn from 'classnames'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faReddit, faTwitter, faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'
+import { faReddit, faTwitter } from '@fortawesome/free-brands-svg-icons'
 
 const Nav = () => {
   const [active, setActive] = useState(false)
@@ -37,24 +37,14 @@ const Nav = () => {
           <div className="navbar-end">
             <div className="buttons">
               <div className="navbar-item">
-                <a target="_BLANK" rel="noopener noreferrer" href="https://www.reddit.com/user/antonio-martin" className="button is-text">
-                  <span className="icon is-medium reddit-color">
-                    <FontAwesomeIcon icon={faReddit} size="2x" />
-                  </span>
-                </a>
-                <a target="_BLANK" rel="noopener noreferrer" href="https://github.com/antoniowd" className="button is-text">
-                  <span className="icon is-medium github-color">
-                    <FontAwesomeIcon icon={faGithub} size="2x" />
-                  </span>
-                </a>
                 <a target="_BLANK" rel="noopener noreferrer" href="https://twitter.com/antoniowebdev" className="button is-text">
                   <span className="icon is-medium twitter-color">
                     <FontAwesomeIcon icon={faTwitter} size="2x" />
                   </span>
                 </a>
-                <a target="_BLANK" rel="noopener noreferrer" href="https://www.linkedin.com/in/antonio-martin-desarrollo-web/" className="button is-text">
-                  <span className="icon is-medium linkedin-color">
-                    <FontAwesomeIcon icon={faLinkedin} size="2x" />
+                <a target="_BLANK" rel="noopener noreferrer" href="https://www.reddit.com/user/antonio-martin" className="button is-text">
+                  <span className="icon is-medium reddit-color">
+                    <FontAwesomeIcon icon={faReddit} size="2x" />
                   </span>
                 </a>
               </div>

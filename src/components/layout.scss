@@ -1,8 +1,19 @@
 @charset "UTF-8";
 
 $family-primary: 'Open Sans';
+$footer-padding: 1rem 1.5rem 0.5rem;
 
 @import "../../node_modules/bulma/bulma.sass";
+
+#gatsby-focus-wrapper {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
 
 .reddit-color {
   color: #FF4500;
@@ -32,12 +43,14 @@ a.blog-list:hover .blog-title {
   color: #3273dc;
 }
 
-a.blog-list:hover img {
-    border: 2px solid transparent;
-  }
+a.blog-list:hover .media-left img {
+  border-width: 0px;
+}
   
-  a.blog-list .media-left img {
+a.blog-list .media-left img {
   border-radius: 290486px;
+  border: solid 2px transparent;
+  transition: border-width 0.2s linear !important;
 }
 
 .content p {

@@ -1,7 +1,7 @@
 ---
-title: ¿Cómo eliminar el código de las PropTypes antes de subir a producción?
+title: Que es un headless CMS y algunas de sus ventajas.
 date: 2019-07-10
-path: /articulo/my-first-post
+path: /articulo/my-first-post-1
 image: ../../images/posts/my-first-post.png
 altImage: Imagen de ubuntu mate
 ---

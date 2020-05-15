@@ -1,7 +1,7 @@
 ---
-title: ¿Cómo eliminar el código de las PropTypes antes de subir a producción?
+title: Crea un nuevo proyecto con Svelte 3
 date: 2019-07-10
-path: /articulo/my-first-post
+path: /articulo/my-first-post-2
 image: ../../images/posts/my-first-post.png
 altImage: Imagen de ubuntu mate
 ---
