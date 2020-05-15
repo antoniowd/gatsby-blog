@@ -3,14 +3,17 @@ import PropTypes from "prop-types"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faReddit, faTwitter } from '@fortawesome/free-brands-svg-icons'
 import ScrollUpButton from "react-scroll-up-button"
-import Seo from "./seo"
+import SEO from './seo'
 import Nav from "./nav"
 import "./layout.scss"
 
-const Layout = ({ children }) => {
+const Layout = ({ children, siteTitle, siteDescription, siteKeywords }) => {
   return (
     <>
-      <Seo title="blog" />
+      <SEO
+        title={siteTitle || 'Blod de desarrollo web'}
+        description={siteDescription}
+        keywords={siteKeywords || []} />
       <Nav />
       <ScrollUpButton ShowAtPosition={500} />
       <main>{children}</main>
@@ -28,7 +31,7 @@ const Layout = ({ children }) => {
             </span>
           </a>
           <div className="is-size-7">
-            2020 Antonio Martin | Todos los derechos reservados
+            {new Date().getFullYear()} Antonio Martin | Todos los derechos reservados
             </div>
         </div>
       </footer>

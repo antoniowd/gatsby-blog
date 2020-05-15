@@ -14,7 +14,9 @@ export default function BlogPostTemplate({ data, pageContext }) {
   const nextPage = (currentPage + 1).toString()
 
   return (
-    <Layout>
+    <Layout
+      siteKeywords={['desarrollo web', 'javascript', 'php', 'node.js', 'html', 'css', 'gatsbyjs', 'reactjs']}
+    >
       <section className="section">
         <div className="container">
           <div className="columns is-multiline">
@@ -63,6 +65,11 @@ export default function BlogPostTemplate({ data, pageContext }) {
 
 export const pageQuery = graphql`
 query blogPageQuery($skip: Int!, $limit: Int!) {
+    site {
+      siteMetadata {
+        title
+      }
+    }
     allMarkdownRemark(
       sort: { fields: [frontmatter___date], order: DESC }
       limit: $limit

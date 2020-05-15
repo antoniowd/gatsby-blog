@@ -5,11 +5,14 @@ import Newsletter from '../components/newsletter'
 
 export default function BlogPostTemplate({ data, pageContext }) {
   const { markdownRemark } = data
-  const { frontmatter, html, timeToRead } = markdownRemark
+  const { frontmatter, html, excerpt, timeToRead } = markdownRemark
   const { previous, next } = pageContext
 
   return (
-    <Layout>
+    <Layout
+      siteTitle={frontmatter.title}
+      siteDescription={excerpt}
+    >
       <section className="section">
         <div className="container">
           <div className="columns is-multiline">
@@ -62,6 +65,7 @@ export default function BlogPostTemplate({ data, pageContext }) {
 export const pageQuery = graphql`
   query BlogPostByPath($path: String!) {
     markdownRemark(frontmatter: { path: { eq: $path } }) {
+      excerpt(pruneLength: 160)
       html
       frontmatter {
         date(locale: "es", formatString: "D [de] MMMM, YYYY")

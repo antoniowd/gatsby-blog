@@ -5,12 +5,23 @@ require('dotenv').config({
 module.exports = {
   siteMetadata: {
     title: `AntonioWebDev`,
-    description: `Encuentre el mejor curso online para aumentar sus conocimientos en su carrera de desarrollador de software`,
-    author: `@antoniowebdev`,
+    author: `Antonio Martin`,
+    description: `Blog sobre desarrollo web. Aqui encontraras articulos sobre diversos temas del desarrollo web.`,
+    siteUrl: 'https://antonioweb.dev',
+    social: {
+      twitter: 'antoniowebdev',
+    },
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sass`,
+    `gatsby-plugin-sitemap`,
+    {
+      resolve: 'gatsby-plugin-mailchimp',
+      options: {
+        endpoint: process.env.MAILCHIMP_ENDPOINT,
+      },
+    },
     {
       resolve: `gatsby-transformer-remark`,
       options: {
