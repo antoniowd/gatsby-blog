@@ -67,15 +67,19 @@ const Newsletter = () => {
             <>
               <div className="field">
                 <div className="control">
-                  <input
-                    name="email"
-                    type="email"
-                    required
-                    className="input"
-                    onChange={(e) => setEmail(e.target.value)}
-                    value={email}
-                    placeholder="Tu correo electrónico"
-                  />
+                  <label>
+                    <input
+                      aria-label="Ingrese su correo electronico"
+                      name="email"
+                      id="email"
+                      type="email"
+                      required
+                      className="input"
+                      onChange={(e) => setEmail(e.target.value)}
+                      value={email}
+                      placeholder="Tu correo electrónico"
+                    />
+                  </label>
                 </div>
               </div>
               <div className="field">

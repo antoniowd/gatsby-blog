@@ -20,12 +20,12 @@ const Layout = ({ children, siteTitle, siteDescription, siteKeywords }) => {
 
       <footer className="footer">
         <div className="content has-text-centered">
-          <a target="_BLANK" rel="noopener noreferrer" href="https://twitter.com/antoniowebdev" className="button is-text">
+          <a target="_BLANK" aria-label="Acceder a twitter" rel="noopener noreferrer" href="https://twitter.com/antoniowebdev" className="button is-text">
             <span className="icon">
               <FontAwesomeIcon icon={faTwitter} />
             </span>
           </a>
-          <a target="_BLANK" rel="noopener noreferrer" href="https://www.reddit.com/user/antonio-martin" className="button is-text">
+          <a target="_BLANK" aria-label="Acceder a reddit" rel="noopener noreferrer" href="https://www.reddit.com/user/antonio-martin" className="button is-text">
             <span className="icon">
               <FontAwesomeIcon icon={faReddit} />
             </span>

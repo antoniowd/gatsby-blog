@@ -37,12 +37,12 @@ const Nav = () => {
           <div className="navbar-end">
             <div className="buttons">
               <div className="navbar-item">
-                <a target="_BLANK" rel="noopener noreferrer" href="https://twitter.com/antoniowebdev" className="button is-text">
+                <a target="_BLANK" aria-label="Acceder a twitter" rel="noopener noreferrer" href="https://twitter.com/antoniowebdev" className="button is-text">
                   <span className="icon is-medium twitter-color">
                     <FontAwesomeIcon icon={faTwitter} size="2x" />
                   </span>
                 </a>
-                <a target="_BLANK" rel="noopener noreferrer" href="https://www.reddit.com/user/antonio-martin" className="button is-text">
+                <a target="_BLANK" aria-label="Acceder a reddit" rel="noopener noreferrer" href="https://www.reddit.com/user/antonio-martin" className="button is-text">
                   <span className="icon is-medium reddit-color">
                     <FontAwesomeIcon icon={faReddit} size="2x" />
                   </span>

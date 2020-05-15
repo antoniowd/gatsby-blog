@@ -17,7 +17,7 @@ const BlogCard = ({ node }) => {
         <h3 className="title is-5 is-size-6-mobile blog-title" style={{ marginBottom: '0.4rem' }}>
           {frontmatter.title}
         </h3>
-      <p className="is-size-7 has-text-grey-light">
+      <p className="is-size-7 has-text-grey-dark">
       {frontmatter.date} - {timeToRead} {timeToRead > 1 ? 'minutos' : 'minuto'} de lectura
       </p>
       </div>
