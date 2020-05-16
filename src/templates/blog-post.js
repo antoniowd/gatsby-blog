@@ -12,20 +12,32 @@ export default function BlogPostTemplate({ data, pageContext }) {
     <Layout
       siteTitle={frontmatter.title}
       siteDescription={excerpt}
+      siteKeywords={frontmatter.keywords}
     >
       <section className="section">
         <div className="container">
           <div className="columns is-multiline">
             <div className="column is-8 is-touch-12">
               <h1 className="title is-2 is-size-3-mobile">{frontmatter.title}</h1>
-              <div className="columns is-mobile subtitle">
+
+              <div className="columns subtitle is-gapless is-vcentered">
                 <div className="column">
-                  {/* redes sociales */}
-                </div>
-                <div className="column has-text-right">
-                  <p className="is-size-7 has-text-grey-light">
+                  <p className="is-size-7 has-text-grey-dark">
                     {frontmatter.date} - {timeToRead} {timeToRead > 1 ? 'minutos' : 'minuto'} de lectura
                   </p>
+                </div>
+                <div className="column is-6 has-text-right  has-text-left-mobile">
+                  {
+                    frontmatter.keywords.map((key, index) => (
+                      <span
+                        key={index}
+                        className="tag is-success is-light"
+                        style={{ marginRight: '0.5rem', fontSize: '0.65rem' }}
+                      >
+                        {key}
+                      </span>)
+                    )
+                  }
                 </div>
               </div>
               <div className="content" dangerouslySetInnerHTML={{ __html: html }} />
@@ -35,7 +47,7 @@ export default function BlogPostTemplate({ data, pageContext }) {
                 <div className="column">
                   {previous && (
                     <h3 className="title is-5 has-text-centered">
-                      <Link to={previous.frontmatter.path} rel="Articulo anterior">
+                      <Link to={previous.frontmatter.slug} rel="Articulo anterior">
                         {previous.frontmatter.title}
                       </Link>
                     </h3>
@@ -44,7 +56,7 @@ export default function BlogPostTemplate({ data, pageContext }) {
                 <div className="column">
                   {next && (
                     <h3 className="title is-5 has-text-centered">
-                      <Link to={next.frontmatter.path} rel="Articulo siguiente">
+                      <Link to={next.frontmatter.slug} rel="Articulo siguiente">
                         {next.frontmatter.title}
                       </Link>
                     </h3>
@@ -63,13 +75,13 @@ export default function BlogPostTemplate({ data, pageContext }) {
 }
 
 export const pageQuery = graphql`
-  query BlogPostByPath($path: String!) {
-    markdownRemark(frontmatter: { path: { eq: $path } }) {
+  query BlogPostBySlug($slug: String!) {
+    markdownRemark(frontmatter: { slug: { eq: $slug } }) {
       excerpt(pruneLength: 160)
       html
       frontmatter {
         date(locale: "es", formatString: "D [de] MMMM, YYYY")
-        path
+        slug
         title
         image {
           childImageSharp {
@@ -79,6 +91,7 @@ export const pageQuery = graphql`
           }
         }
         altImage
+        keywords
       }
       timeToRead
     }

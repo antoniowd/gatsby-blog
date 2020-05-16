@@ -52,18 +52,6 @@ export default function BlogPostTemplate({ data, pageContext }) {
                   </span>
                 </Link>)}
               </nav>
-
-              {/* <button className="button is-primary">Primary</button>
-              <button className="button is-success">Primary</button>
-              <button className="button is-info">Primary</button>
-              <button className="button is-warning">Primary</button>
-              <button className="button is-danger">Primary</button>
-
-              <p className="has-text-primary">Text</p>
-              <p className="has-text-success">Text</p>
-              <p className="has-text-info">Text</p>
-              <p className="has-text-warning">Text</p>
-              <p className="has-text-danger">Text</p> */}
             </div>
             <div className="column is-4 is-touch-12">
               <Newsletter />
@@ -91,7 +79,7 @@ query blogPageQuery($skip: Int!, $limit: Int!) {
       node {
         frontmatter {
           title
-          path
+          slug
           date(locale: "es", formatString: "D [de] MMMM, YYYY")
           image {
             childImageSharp {
@@ -101,6 +89,7 @@ query blogPageQuery($skip: Int!, $limit: Int!) {
             }
           }
           altImage
+          keywords
         }
         timeToRead
       }

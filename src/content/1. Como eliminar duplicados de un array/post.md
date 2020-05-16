@@ -1,11 +1,15 @@
 ---
 title: Como eliminar duplicados de un array en PHP.
 date: 2020-05-15
-path: /articulo/como-eliminar-duplicados-en-un-array-usando-php
-image: ../../images/posts/my-second-post-featured.jpeg
+slug: /articulo/como-eliminar-duplicados-en-un-array-usando-php
+image: ./image.jpeg
 altImage: Imagen de ubuntu mate
+keywords: 
+ - PHP
+ - Javascript
+ - Node.js
 ---
-![Hopper the rabbiy](../../images/posts/my-second-post-featured.jpeg)
+![Hopper the rabbiy](./image.jpeg)
 
 Aunque PHP tiene ya una función llamada `array_unique` para eliminar duplicados en un array, esta no funciona correctamente en algunos casos. Cuando se trata de eliminar duplicados de un array multidimensional o un array de objetos, `array_unique` deja de ser útil. En este post creare una función que me permita eliminar duplicados de un array sin importar si es un array simple, multidimensional o de objetos.
 
