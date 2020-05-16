@@ -13,7 +13,7 @@ const Nav = () => {
       <div className="container">
         <div className="navbar-brand">
           <a className="navbar-item" href="/">
-            <img src={Logo} />
+            <img src={Logo} alt="Logotipo de antoniowebdev" />
           </a>
 
           <button type="button"
