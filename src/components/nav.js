@@ -3,6 +3,7 @@ import React, { useState } from "react"
 import cn from 'classnames'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faReddit, faTwitter } from '@fortawesome/free-brands-svg-icons'
+import Logo from '../images/logo.png'
 
 const Nav = () => {
   const [active, setActive] = useState(false)
@@ -12,7 +13,7 @@ const Nav = () => {
       <div className="container">
         <div className="navbar-brand">
           <a className="navbar-item" href="/">
-            <strong>&lt;AntonioWebDev/&gt;</strong>
+            <img src={Logo} />
           </a>
 
           <button type="button"
