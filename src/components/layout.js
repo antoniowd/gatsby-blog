@@ -10,10 +10,15 @@ import "./layout.scss"
 const Layout = ({ children, siteTitle, siteDescription, siteKeywords }) => {
   return (
     <>
-      <SEO
-        title={siteTitle || 'Blog de desarrollo web'}
-        description={siteDescription}
-        keywords={siteKeywords || []} />
+      {
+        siteTitle && (
+          <SEO
+            title={siteTitle}
+            description={siteDescription}
+            keywords={siteKeywords || []}
+          />
+        )
+      }
       <Nav />
       <ScrollUpButton ShowAtPosition={500} />
       <main>{children}</main>
