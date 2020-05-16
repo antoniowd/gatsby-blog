@@ -64,8 +64,10 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `AntonioWebDev`,
+        short_name: `AntonioWebDev`,
+        description: 'Blog sobre desarrollo web. Aqui encontraras artículos sobre diversos temas del desarrollo web.',
+        lang: 'es',
         start_url: `/`,
         background_color: `#07a04c`,
         theme_color: `#07a04c`,
