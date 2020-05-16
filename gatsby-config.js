@@ -6,7 +6,7 @@ module.exports = {
   siteMetadata: {
     title: `AntonioWebDev`,
     author: `Antonio Martin`,
-    description: `Blog sobre desarrollo web. Aqui encontraras articulos sobre diversos temas del desarrollo web.`,
+    description: `Blog de programación de aplicaciones web. Todo lo que necesitas para aprender programación del lado del servidor y cliente. También analizo los mejores cursos de programacion web.`,
     siteUrl: 'https://antonioweb.dev',
     social: {
       twitter: 'antoniowebdev',
@@ -66,7 +66,7 @@ module.exports = {
       options: {
         name: `AntonioWebDev`,
         short_name: `AntonioWebDev`,
-        description: 'Blog sobre desarrollo web. Aqui encontraras artículos sobre diversos temas del desarrollo web.',
+        description: 'Blog de programación de aplicaciones web. Todo lo que necesitas para aprender programación del lado del servidor y cliente. También analizo los mejores cursos de programacion web.',
         lang: 'es',
         start_url: `/`,
         background_color: `#07a04c`,
