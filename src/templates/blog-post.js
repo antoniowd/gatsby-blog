@@ -42,27 +42,34 @@ export default function BlogPostTemplate({ data, pageContext }) {
               </div>
               <div className="content" dangerouslySetInnerHTML={{ __html: html }} />
               <hr />
-              <p className="title is-4 has-text-centered">También te puede interesar</p>
-              <div className="columns">
-                <div className="column">
-                  {previous && (
-                    <h3 className="title is-5 has-text-centered">
-                      <Link to={previous.frontmatter.slug} rel="Articulo anterior">
-                        {previous.frontmatter.title}
-                      </Link>
-                    </h3>
-                  )}
-                </div>
-                <div className="column">
-                  {next && (
-                    <h3 className="title is-5 has-text-centered">
-                      <Link to={next.frontmatter.slug} rel="Articulo siguiente">
-                        {next.frontmatter.title}
-                      </Link>
-                    </h3>
-                  )}
-                </div>
-              </div>
+
+              {
+                previous && next && (
+                  <>
+                    <p className="title is-4 has-text-centered">También te puede interesar</p>
+                    <div className="columns">
+                      <div className="column">
+                        {previous && (
+                          <h3 className="title is-5 has-text-centered">
+                            <Link to={previous.frontmatter.slug} rel="Articulo anterior">
+                              {previous.frontmatter.title}
+                            </Link>
+                          </h3>
+                        )}
+                      </div>
+                      <div className="column">
+                        {next && (
+                          <h3 className="title is-5 has-text-centered">
+                            <Link to={next.frontmatter.slug} rel="Articulo siguiente">
+                              {next.frontmatter.title}
+                            </Link>
+                          </h3>
+                        )}
+                      </div>
+                    </div>
+                  </>
+                )
+              }
             </div>
             <div className="column is-4 is-touch-12">
               <Newsletter />
