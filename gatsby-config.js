@@ -32,14 +32,14 @@ module.exports = {
           {
             resolve: `gatsby-remark-images`,
             options: {
-              maxWidth: 1002,
+              maxWidth: 912,
             },
           },
           {
             resolve: "gatsby-remark-external-links",
             options: {
               target: "_blank",
-              rel: "nofollow"
+              rel: "noreferrer"
             }
           }
         ]
