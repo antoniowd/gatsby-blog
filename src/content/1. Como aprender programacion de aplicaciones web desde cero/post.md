@@ -24,7 +24,7 @@ Una vez terminado el tutorial piensas que eres un desarrollador web en plena y c
 
 ## Empieza por las bases y domina HTML, CSS y Javascript
 
-Lo principal que tienes que aprender en la programación de aplicaciones web es [HTML](https://es.wikipedia.org/wiki/HTML), [CSS](https://es.wikipedia.org/wiki/Hoja_de_estilos_en_cascada) y [Javascript](https://es.wikipedia.org/wiki/JavaScript). Olvida por el momento los excelentes frameworks, librerías y soluciones del tipo hago todo y que parece ser magia para ti. Céntrate en estudiar a fondo estas bases y aprenderlas bien. Dedicandote a dominar esto puedes llegar a ser un desarrollador web de muy altísimo nivel ya que todas las soluciones están creadas sobre estas tres bases.
+Lo principal que tienes que aprender en la programación de aplicaciones web es [HTML](https://es.wikipedia.org/wiki/HTML), [CSS](https://es.wikipedia.org/wiki/Hoja_de_estilos_en_cascada) y [Javascript](https://es.wikipedia.org/wiki/JavaScript). Olvida por el momento los excelentes frameworks, librerías y soluciones del tipo hago todo y que parece ser magia para ti. Céntrate en estudiar a fondo estas bases y aprenderlas bien. Dedicándote a dominar esto puedes llegar a ser un desarrollador web de muy altísimo nivel, ya que todas las soluciones están creadas sobre estas tres bases.
 
 ## HTML (Lenguaje de marcas de hipertexto o Hyper Text Markup Language)
 
