@@ -1,19 +1,26 @@
 import React from 'react'
 import { Link, graphql } from 'gatsby'
 import Layout from '../components/layout'
+import SEO from '../components/seo'
 import Newsletter from '../components/newsletter'
 
 export default function BlogPostTemplate({ data, pageContext }) {
   const { markdownRemark } = data
   const { frontmatter, html, excerpt, timeToRead } = markdownRemark
   const { previous, next } = pageContext
+  const image = frontmatter.image
+      ? frontmatter.image.childImageSharp.resize
+      : null
 
   return (
-    <Layout
-      siteTitle={frontmatter.title}
-      siteDescription={excerpt}
-      siteKeywords={frontmatter.keywords}
-    >
+    <Layout>
+      <SEO
+        title={frontmatter.title}
+        description={excerpt}
+        image={image}
+        keywords={frontmatter.keywords}
+        pathname={frontmatter.slug}
+      />
       <section className="section">
         <div className="container">
           <div className="columns is-multiline">
@@ -92,8 +99,10 @@ export const pageQuery = graphql`
         title
         image {
           childImageSharp {
-            fluid(maxWidth: 1000, fit: COVER) {
-              ...GatsbyImageSharpFluid
+            resize(width: 1200) {
+              src
+              height
+              width
             }
           }
         }

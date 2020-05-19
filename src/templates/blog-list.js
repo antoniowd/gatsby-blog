@@ -15,7 +15,7 @@ export default function BlogPostTemplate({ data, pageContext }) {
 
   return (
     <Layout
-      siteKeywords={['desarrollo web', 'javascript', 'php', 'node.js', 'html', 'css', 'gatsbyjs', 'reactjs']}
+      siteTitle="Blog de desarrollo web"
     >
       <section className="section">
         <div className="container">
