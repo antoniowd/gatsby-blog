@@ -10,7 +10,7 @@ import PropTypes from "prop-types"
 import { Helmet } from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
 
-function SEO({ description, lang, meta, keywords, title, image: metaImage, pathname }) {
+function SEO({ description, lang, meta, keywords, title, image: metaImage, altImage, pathname }) {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -21,6 +21,10 @@ function SEO({ description, lang, meta, keywords, title, image: metaImage, pathn
             author
             keywords
             siteUrl
+            image
+            social {
+              twitter
+            }
           }
         }
       }
@@ -70,12 +74,20 @@ function SEO({ description, lang, meta, keywords, title, image: metaImage, pathn
           content: metaDescription,
         },
         {
+          property: `og:url`,
+          content: site.siteMetadata.siteUrl,
+        },
+        {
           property: `og:type`,
           content: `website`,
         },
         {
           name: `twitter:creator`,
-          content: site.siteMetadata.author,
+          content: site.siteMetadata.social.twitter,
+        },
+        {
+          name: `twitter:site`,
+          content: site.siteMetadata.social.twitter,
         },
         {
           name: `twitter:title`,
@@ -94,6 +106,10 @@ function SEO({ description, lang, meta, keywords, title, image: metaImage, pathn
                 content: image,
               },
               {
+                property: "og:image:alt",
+                content: altImage,
+              },
+              {
                 property: "og:image:width",
                 content: metaImage.width,
               },
@@ -107,6 +123,14 @@ function SEO({ description, lang, meta, keywords, title, image: metaImage, pathn
               },
             ]
             : [
+              {
+                property: "og:image",
+                content: site.siteMetadata.image,
+              },
+              {
+                property: "og:image:alt",
+                content: altImage,
+              },
               {
                 name: "twitter:card",
                 content: "summary",
@@ -122,6 +146,7 @@ SEO.defaultProps = {
   meta: [],
   description: ``,
   keywords: [],
+  altImage: 'Antonio Web Dev'
 }
 
 SEO.propTypes = {
@@ -135,6 +160,7 @@ SEO.propTypes = {
     height: PropTypes.number.isRequired,
     width: PropTypes.number.isRequired,
   }),
+  altImage: PropTypes.string,
   pathname: PropTypes.string,
 }
 

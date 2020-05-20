@@ -9,8 +9,9 @@ module.exports = {
     description: `Blog de programación de aplicaciones web. Todo lo que necesitas para aprender programación del lado del servidor y cliente. También analizo los mejores cursos de programacion web.`,
     keywords: ['desarrollo web', 'aplicaciones web', 'javascript', 'php', 'node.js', 'html', 'css', 'gatsbyjs', 'reactjs'],
     siteUrl: 'https://antonioweb.dev',
+    image: 'src/images/logo.png',
     social: {
-      twitter: 'antoniowebdev',
+      twitter: '@antoniowebdev',
     },
   },
   plugins: [

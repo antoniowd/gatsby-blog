@@ -18,6 +18,7 @@ export default function BlogPostTemplate({ data, pageContext }) {
         title={frontmatter.title}
         description={excerpt}
         image={image}
+        altImage={frontmatter.altImage}
         keywords={frontmatter.keywords}
         pathname={frontmatter.slug}
       />
