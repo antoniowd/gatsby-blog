@@ -62,6 +62,10 @@ function SEO({ description, lang, meta, keywords, title, image: metaImage, altIm
           content: metaDescription,
         },
         {
+          name: `msvalidate.01`,
+          content: '743FEDC01E18F395149F1DF3A991F35A',
+        },
+        {
           name: `keywords`,
           content: myKeywords.join(`,`),
         },
