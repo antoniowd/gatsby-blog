@@ -29,7 +29,7 @@ const BlogCard = ({ node }) => {
                 <span
                   key={index}
                   className="tag is-success is-light"
-                  style={{ marginRight: '0.5rem', fontSize: '0.65rem' }}
+                  style={{ marginRight: '0.1rem', fontSize: '0.65rem' }}
                 >
                   {key}
                 </span>)
