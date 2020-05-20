@@ -7,4 +7,5 @@
 // You can delete this file if you're not using it
 
 import "typeface-open-sans"
-import "prismjs/themes/prism-coy.css"
+import "prismjs/plugins/line-numbers/prism-line-numbers.css"
+import "prismjs/themes/prism-okaidia.css"
