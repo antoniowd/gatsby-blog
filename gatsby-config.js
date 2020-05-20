@@ -6,7 +6,7 @@ module.exports = {
   siteMetadata: {
     title: `AntonioWebDev`,
     author: `Antonio Martin`,
-    description: `Blog de programación de aplicaciones web. Todo lo que necesitas para aprender programación del lado del servidor y cliente. También analizo los mejores cursos de programacion web.`,
+    description: `Blog de programación de aplicaciones web. Artículos de programación del lado del servidor y del cliente, y recomendaciones de cursos de programacion web.`,
     keywords: ['desarrollo web', 'aplicaciones web', 'javascript', 'php', 'node.js', 'html', 'css', 'gatsbyjs', 'reactjs'],
     siteUrl: 'https://antonioweb.dev',
     image: '/images/image-og.png',

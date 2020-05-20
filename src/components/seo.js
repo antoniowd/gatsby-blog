@@ -66,6 +66,10 @@ function SEO({ description, lang, meta, keywords, title, image: metaImage, altIm
           content: myKeywords.join(`,`),
         },
         {
+          name: `robots`,
+          content: 'NOODP',
+        },
+        {
           property: `og:title`,
           content: title,
         },

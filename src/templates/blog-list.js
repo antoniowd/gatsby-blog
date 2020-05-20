@@ -21,16 +21,7 @@ export default function BlogPostTemplate({ data, pageContext }) {
         <div className="container">
           <div className="columns is-multiline">
             <div className="column is-8 is-touch-12">
-              {
-                isFirst && (
-                  <h2 className="title is-4">Últimas publicaciones sobre desarrollo web</h2>
-                )
-              }
-              {
-                !isFirst && (
-                  <h2 className="title is-4">Árticulos sobre desarrollo web</h2>
-                )
-              }
+              <h2 className="title is-4">Artículos de programación de aplicaciones web</h2>
               <hr />
               {
                 data.allMarkdownRemark.edges.map((post, index) => (
