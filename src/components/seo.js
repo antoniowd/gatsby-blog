@@ -125,7 +125,7 @@ function SEO({ description, lang, meta, keywords, title, image: metaImage, altIm
             : [
               {
                 property: "og:image",
-                content: site.siteMetadata.image,
+                content: `${site.siteMetadata.siteUrl}${site.siteMetadata.image}`,
               },
               {
                 property: "og:image:alt",
