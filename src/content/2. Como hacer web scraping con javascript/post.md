@@ -61,7 +61,7 @@ const jsdom = require('jsdom');
     const response = await page.goto('https://www.google.com/search?q=web+scraping+libros');
     const body = await response.text();
 
-    // Creamos una instancia del resultado de puppeter para parsearlo con jsdom
+    // Creamos una instancia del resultado devuelto por puppeter para parsearlo con jsdom
     const { window: { document } } = new jsdom.JSDOM(body);
 
     // Seleccionamos los titulos y lo mostramos en consola
