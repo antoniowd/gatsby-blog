@@ -29,7 +29,7 @@ El web scraping es usado en infinidades de tareas en el internet. Son llamados d
 
 **Importante aclarar**. El web scraping dada su naturaleza, puede ir en contra de los términos legales y el modo de usar la información de algunos sitios web. Sugiero informarte bien sobre este tema antes de empezar a realizar tus programas de scraping.
 
-## ¿Qué necesito para hacer un web scraping?
+## Librerías que necesito para hacer un web scraping
 
 Hacer web scraping a un sitio web no tiene mucha complejidad, al menos uno sencillo, como el que haremos aquí usando javascript y nodejs. Los scrapers pueden llegar a ser bien complejos, dependendiendo de su funcionalidad y de los sitios web que tengas como objetivos.
 
@@ -47,7 +47,7 @@ En este sencillo ejemplo buscaremos en google resultados de [libros de web scrap
 
 Dentro de un directorio iniciamos un proyecto npm el comando con `npm init --yes`. Luego instalamos nuestras dependencias con el comando `npm install --save puppeteer jsdom`. Con esto tenemos lo necesario para crear nuestro primer scraper. ¡Vamos al código!
 
-Creamos un archivo llamado `google-scraper.js` y dentro escribimos el siguiente código. 
+Creamos un archivo llamado `google-scraper.js` y dentro escribimos el siguiente código.
 
 ``` javascript{numberLines: true}
 const puppeteer = require('puppeteer');
