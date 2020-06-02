@@ -1,5 +1,5 @@
 ---
-title: Cómo aprender programación de aplicaciones web desde cero.
+title: Cómo aprender programación de aplicaciones web desde cero
 date: 2020-05-18
 slug: /articulo/como-aprender-programacion-de-aplicaciones-web-desde-cero
 image: ./image.jpg
