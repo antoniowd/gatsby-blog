@@ -1,5 +1,7 @@
 import React from 'react'
 import { Link, graphql } from 'gatsby'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 import Newsletter from '../components/newsletter'
@@ -9,8 +11,8 @@ export default function BlogPostTemplate({ data, pageContext }) {
   const { frontmatter, html, excerpt, timeToRead } = markdownRemark
   const { previous, next } = pageContext
   const image = frontmatter.image
-      ? frontmatter.image.childImageSharp.resize
-      : null
+    ? frontmatter.image.childImageSharp.resize
+    : null
 
   return (
     <Layout>
@@ -51,33 +53,43 @@ export default function BlogPostTemplate({ data, pageContext }) {
               <div className="content" dangerouslySetInnerHTML={{ __html: html }} />
               <hr />
 
-              {
-                previous && next && (
-                  <>
-                    <p className="title is-4 has-text-centered">También te puede interesar</p>
-                    <div className="columns">
-                      <div className="column">
-                        {previous && (
-                          <h3 className="title is-5 has-text-centered">
-                            <Link to={previous.frontmatter.slug} rel="Articulo anterior">
-                              {previous.frontmatter.title}
-                            </Link>
-                          </h3>
-                        )}
-                      </div>
-                      <div className="column">
-                        {next && (
-                          <h3 className="title is-5 has-text-centered">
-                            <Link to={next.frontmatter.slug} rel="Articulo siguiente">
-                              {next.frontmatter.title}
-                            </Link>
-                          </h3>
-                        )}
-                      </div>
-                    </div>
-                  </>
-                )
-              }
+
+              <p className="title is-4 has-text-centered">También te puede interesar</p>
+              <div className="columns">
+                <div className="column">
+                  {previous && (
+                    <h3 className="title is-5 has-text-centered">
+                      <Link to={previous.frontmatter.slug} rel="Articulo anterior">
+                        <div className="columns is-vcentered is-mobile">
+                          <div className="column is-1">
+                            <FontAwesomeIcon icon={faArrowLeft} />
+                          </div>
+                          <div className="column is-11">
+                            {previous.frontmatter.title}
+                          </div>
+                        </div>
+                      </Link>
+                    </h3>
+                  )}
+                </div>
+                <div className="column">
+                  {next && (
+                    <h3 className="title is-5 has-text-centered">
+                      <Link to={next.frontmatter.slug} rel="Articulo siguiente">
+                        <div className="columns is-vcentered is-mobile">
+                          <div className="column is-11">
+                            {next.frontmatter.title}
+                          </div>
+                          <div className="column is-1">
+                            <FontAwesomeIcon icon={faArrowRight} />
+                          </div>
+                        </div>
+                      </Link>
+                    </h3>
+                  )}
+                </div>
+              </div>
+
             </div>
             <div className="column is-4 is-touch-12">
               <Newsletter />
@@ -85,7 +97,7 @@ export default function BlogPostTemplate({ data, pageContext }) {
           </div>
         </div>
       </section>
-    </Layout>
+    </Layout >
   )
 }
 

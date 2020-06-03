@@ -24,9 +24,46 @@ $easeOutBack: cubic-bezier(0.175, 0.885, 0.320, 1.275);
   flex-direction: column;
 }
 
+.gatsby-code-title {
+  display: block;
+  position: relative;
+  background: #272822;
+  width: 100%;
+  top: 20px;
+  border-top-left-radius: 0.3em;
+  border-top-right-radius: 0.3em;
+}
+
+.gatsby-code-title span {
+  display: inline;
+  position: relative;
+  font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
+  color: #eee;
+  background: $turquoise;
+  border-radius: 0.2em;
+  padding: 3px;
+  top: -11px;
+  left: 5px;
+}
+
 .line-numbers-rows {
   margin-top: 1.25em;
   width: 40px !important;
+}
+
+.number {
+  align-items: center; 
+  background-color: inherit; 
+  border-radius: 0; 
+  display: inline-flex; 
+  font-size: inherit; 
+  height: inherit; 
+  justify-content: center; 
+  margin-right: inherit; 
+  min-width: inherit; 
+  padding: inherit; 
+  text-align: center; 
+  vertical-align: top;
 }
 
 main {

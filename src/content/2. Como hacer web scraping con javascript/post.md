@@ -1,5 +1,5 @@
 ---
-title: Cómo hacer web scraping con javascript y nodejs.
+title: Cómo hacer web scraping con javascript y nodejs
 date: 2020-05-21
 slug: /articulo/como-hacer-web-scraping-con-javascript-y-nodejs
 image: ./image.jpg
@@ -49,7 +49,7 @@ Dentro de un directorio iniciamos un proyecto npm el comando con `npm init --yes
 
 Creamos un archivo llamado `google-scraper.js` y dentro escribimos el siguiente código.
 
-``` javascript{numberLines: true}
+``` javascript
 const puppeteer = require('puppeteer');
 const jsdom = require('jsdom');
 

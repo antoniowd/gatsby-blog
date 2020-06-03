@@ -35,7 +35,16 @@ module.exports = {
       options: {
         plugins: [
           {
+            resolve: `gatsby-remark-prismjs-title`,
+            options: {
+              className: 'code-language-title'
+            }
+          },
+          {
             resolve: `gatsby-remark-prismjs`,
+            options: {
+              showLineNumbers: true,
+            }
           },
           {
             resolve: `gatsby-remark-images`,
