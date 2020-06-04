@@ -36,7 +36,7 @@ function SEO({ description, lang, meta, keywords, title, image: metaImage, altIm
     metaImage && metaImage.src
       ? `${site.siteMetadata.siteUrl}${metaImage.src}`
       : null
-  const canonical = pathname ? `${site.siteMetadata.siteUrl}${pathname}` : null
+  const canonical = pathname ? `${site.siteMetadata.siteUrl}${pathname}` : site.siteMetadata.siteUrl
   const myKeywords = keywords.length > 0 ? keywords : site.siteMetadata.keywords
 
   return (
@@ -75,7 +75,7 @@ function SEO({ description, lang, meta, keywords, title, image: metaImage, altIm
         },
         {
           property: `og:url`,
-          content: site.siteMetadata.siteUrl,
+          content: canonical,
         },
         {
           property: `og:type`,
