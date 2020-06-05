@@ -46,6 +46,16 @@ $easeOutBack: cubic-bezier(0.175, 0.885, 0.320, 1.275);
   left: 5px;
 }
 
+.navbar-brand > .navbar-item > img {
+  margin-right: 5px;
+  max-height: 2.5rem;
+}
+
+.navbar-brand > a {
+  font-weight: bold;
+  color: $turquoise;
+}
+
 .line-numbers-rows {
   margin-top: 1.25em;
   width: 40px !important;
