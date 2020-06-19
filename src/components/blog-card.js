@@ -23,7 +23,7 @@ const BlogCard = ({ node }) => {
               {frontmatter.date} - {timeToRead} {timeToRead > 1 ? 'minutos' : 'minuto'} de lectura
             </span>
           </div>
-          <div className="column">
+          <div className="column has-text-right">
             {
               frontmatter.keywords.map((key, index) => (
                 <span
