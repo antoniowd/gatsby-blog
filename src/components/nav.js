@@ -2,7 +2,7 @@
 import React, { useState } from "react"
 import cn from 'classnames'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faReddit, faTwitter } from '@fortawesome/free-brands-svg-icons'
+import { faGithub, faTwitter } from '@fortawesome/free-brands-svg-icons'
 import Logo from '../images/logo.png'
 
 const Nav = () => {
@@ -43,9 +43,9 @@ const Nav = () => {
                     <FontAwesomeIcon icon={faTwitter} size="2x" />
                   </span>
                 </a>
-                <a target="_BLANK" aria-label="Acceder a reddit" rel="noopener noreferrer" href="https://www.reddit.com/user/antonio-martin" className="button is-text">
-                  <span className="icon is-medium reddit-color">
-                    <FontAwesomeIcon icon={faReddit} size="2x" />
+                <a target="_BLANK" aria-label="Acceder a github" rel="noopener noreferrer" href="https://github.com/antoniowd" className="button is-text">
+                  <span className="icon is-medium">
+                    <FontAwesomeIcon icon={faGithub} size="2x" />
                   </span>
                 </a>
               </div>

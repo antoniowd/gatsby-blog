@@ -1,7 +1,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faReddit, faTwitter } from '@fortawesome/free-brands-svg-icons'
+import { faGithub, faTwitter } from '@fortawesome/free-brands-svg-icons'
 import ScrollUpButton from "react-scroll-up-button"
 import SEO from './seo'
 import Nav from "./nav"
@@ -30,9 +30,9 @@ const Layout = ({ children, siteTitle, siteDescription, siteKeywords }) => {
               <FontAwesomeIcon icon={faTwitter} size="2x" />
             </span>
           </a>
-          <a target="_BLANK" aria-label="Acceder a reddit" rel="noopener noreferrer" href="https://www.reddit.com/user/antonio-martin" className="button is-text">
+          <a target="_BLANK" aria-label="Acceder a github" rel="noopener noreferrer" href="https://github.com/antoniowd" className="button is-text">
             <span className="icon">
-              <FontAwesomeIcon icon={faReddit} size="2x" />
+              <FontAwesomeIcon icon={faGithub} size="2x" />
             </span>
           </a>
           <br />
