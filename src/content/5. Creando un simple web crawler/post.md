@@ -3,14 +3,14 @@ title: "Creando un web crawler para extraer información de un sitio web"
 date: 2020-07-22
 slug: /articulo/creando-un-web-crawler-para-extraer-informacion-de-un-sitio-web
 image: ./image.jpg
-altImage: Un robot araña gigante corriendo por el campo
+altImage: Una araña en una telaraña
 keywords: 
  - web scraping
  - crawler
  - got
  - jsdom
 ---
-![Un robot araña gigante corriendo por el campo](./image.jpg)
+![Una araña en una telaraña](./image.jpg)
 
 Un web crawler, spider o indexador web es un programa para acceder a un sitio web y recolectar determinado contenido. El crawler comienza con una lista de URL, busca los hipervínculos en esas páginas, lo agrega a su lista de URL y vuelve a buscar otros hipervínculos. Este procedimiento crea un sistema de navegación recurrente en la web y es configurado con ciertas condiciones para establecer sus reglas; como la profundidad máxima del sitio, hipervínculos internos y externos, buscar determinado patrón de URL, controlar la cantidad de conexiones simultáneas y otras ya establecidas, incluso las reglas que se te puedan ocurrir y que estén acorde al problema a resolver.
 
