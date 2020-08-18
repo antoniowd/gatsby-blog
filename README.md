@@ -1,12 +1,19 @@
-<p align="center">
-  <a href="https://antonioweb.dev">
-    <img alt="Gatsby" src="https://antonioweb.dev/images/image-og.png" width="60" />
-  </a>
-</p>
-<h1 align="center">
-  AntonioWebDev
-</h1>
+# AntonioWebDev's Blog
+> Blog in Spanish about web development and web scraping.
 
-<p>
-  Blog <a href="https://antonioweb.dev">antoniowebdev</a> creado con gatsby.js. En este blog escribo artículos y tutoriales sobre desarrollo web y web scraping.
-</p>
+[![Gatsby Version][gastby-image]][gastby-url]
+[![Bulma Version][bulma-image]][bulma-url]
+
+![](header-blog.png)
+
+## Instalation
+
+```sh
+npm install
+```
+
+[gastby-image]: https://img.shields.io/badge/gatsbyJS-v2.21.33-orange
+[gastby-url]: https://www.gatsbyjs.org/
+[bulma-image]: https://img.shields.io/badge/bulma-v0.8.2-orange
+[bulma-url]: https://bulma.io/
+
